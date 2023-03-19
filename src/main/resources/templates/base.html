@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:fragment="layout(content)">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Movie Star</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+    <style>
+        .cardBox1{
+            background-color: blueviolet;
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3224/1483224-v-dfb52de25006);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox1:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox2{
+            background-color: blueviolet;
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1746/1481746-v-e625327a9655);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox2:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox3{
+            background-color: blueviolet;
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9310/1479310-v-644f76c4ffe5);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox3:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox4{
+            background-color: blueviolet;
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8739/1478739-v-4b473ba61414);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox4:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox4{
+            background-color: blueviolet;
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8478/1478478-v-3a45a2ae5b3e);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox4:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox5{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6675/1476675-v-582634b7d3fb);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox5:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox6{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5793/1475793-v-fea8a9a9744a);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox6:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox7{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1965/1441965-v-6561f230c549);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox7:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox8{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9847/1469847-v-8ccfe08829e1);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox8:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox9{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4452/1444452-v-aff8aea93f8e);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox9:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardBox10{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1138/1431138-v-15bc1d407090);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 323px;
+        }
+        .cardBox10:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+
+        .cardbox1{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4317/1484317-h-8a473adaa6fa);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox1:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox2{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4311/1484311-h-378d1fcc7bee);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox2:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox3{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4338/1484338-h-50ec1f8b77c6);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox3:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox4{
+            background-color: blueviolet;
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4351/1484351-h-b5f2923e5227);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox4:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox5{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4304/1484304-h-5d150fe3fb93);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox5:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox6{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4534/1484534-h-e62a3f9de17d);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox6:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox7{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4525/1484525-h-a9b9715616b8);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox7:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox8{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/3626/1483626-h-d98912c9881f);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox8:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox9{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/3787/1483787-h-f9419e595402);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox9:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .cardbox10{
+            background-color: blueviolet;
+            background-image:url(https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2531/1482531-h-a661c78dfb3d);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            transition: transform .2s;
+            height: 123px;
+        }
+        .cardbox10:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        footer li{
+            display: inline-block;
+            color: white;
+            padding: 10px;
+        }
+        footer p{
+            display: inline-block;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Movie Star</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active"
+                                            aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signin">Login</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div th:replace="${content}"></div>
+
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+</html>
