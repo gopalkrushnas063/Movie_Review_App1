@@ -1,4 +1,4 @@
-<h2 align="center">✩░▒▓▆▅▃▂▁📚𝐌𝐨𝐯𝐢𝐞 𝐒𝐭𝐲𝐥𝐞📚▁▂▃▅▆▓▒░✩</h2>
+<h2 align="center">✩░▒▓▆▅▃▂▁📚𝐌𝐨𝐯𝐢𝐞 𝐒𝐭𝐚𝐫📚▁▂▃▅▆▓▒░✩</h2>
 <h2>Project Summary 📚 :</h2>
 <img align="left" width="153" src="https://user-images.githubusercontent.com/103574856/229445593-8fec336f-f4da-4b98-828b-c1b3e40b8f50.png"/>
 <p align="justify">The main goal of this project is to implement the Spring Security module for user authentication. Once the user successfully logs in with the correct credentials, they will be directed to a static movie section page. This page will display various movies and related information. The Spring Security module ensures that only authenticated users are allowed to access this page, providing an added layer of security to the application.</p>
